@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<body>
+    <script>
+      //Escreva um script que solicite um número para o usuário e 
+      //em seguida escreva uma mensagem.
+      //informando se o número informado é múltiplo de 5. 
+
+      //Para que um número seja múltiplo de 5,
+      //ele deve ser maior ou igual a 5 e o resto da divisão 
+      //por 5 deve ser igual a zero.
+
+      let numero = window.prompt('Digite um número');
+
+      let resultado = (numero >= 5) && (numero % 5 == 0);
+
+      if (resultado)
+      {
+            document.write('<h1>Número é múltiplo de 5</h1>');
+      }
+      else
+      {
+            document.write('<h1>Número não é múltiplo de 5</h1>');
+      }
+    </script>
+</body>
+</html>

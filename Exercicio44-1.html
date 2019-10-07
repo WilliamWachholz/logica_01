@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<body>
+    <script>
+         let opcao = window.prompt('1 - Sacar | 2  - Depositar | 3 - Verificar Saldo');
+         opcao = parseInt(opcao);
+
+        switch (opcao)
+        {
+            case 1:
+                document.write('<h1>Você escolheu a opção Sacar</h1>');
+            break;
+            case 2:
+                document.write('<h1>Você escolheu a opção Depositar</h1>');
+            break;
+            case 3:
+                document.write('<h1>Você escolheu a opção Verificar Saldo</h1>');
+            break;
+            default:
+                document.write('<h1>Opção inválida</h1>');
+            break;
+        }
+    </script>
+</body>
+</html>

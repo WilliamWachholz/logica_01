@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<body>
+    <script>
+        let valorA = true;
+        let valorB = true;
+        let valorC = false;
+
+        document.write('<p>' + (valorA && valorA) + '<p>');
+    
+        //a. valorA E valorB
+        document.write('<p>a. ' + (valorA && valorB) + '</p>');
+
+        //b. valorA E valorB E valorC
+        document.write('<p>b. ' + (valorA && valorB && valorC) + '</p>');
+
+        //c. valorA E valorC
+        document.write('<p>c. ' + (valorA && valorC) + '</p>');
+
+        //d. valorB E valorC
+        document.write('<p>d. ' + (valorB && valorC) + '</p>');
+
+        //e. valorA OU valorB
+        document.write('<p>e. ' + (valorA || valorB) + '</p>');
+
+        //f. valorB OU ValorC
+        document.write('<p>f. ' + (valorB || valorC) + '</p>');
+
+        //g. valorA OU valorB ou valorC
+        document.write('<p>g. ' + (valorA || valorB || valorC) + '</p>');
+
+        //h. valorC OU valorC
+        document.write('<p>h. ' + (valorC || valorC) + '</p>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        function Pessoa(nome, idade) {
+            this.Nome = nome;
+            this.Idade = idade;
+        }
+
+        function Carro(modelo, roda) {
+            this.Modelo = modelo;
+            this.Roda = roda;
+        }
+
+        //criar funcao construtora para objeto carro, com
+        //propriedade modelo e roda
+        //instanciar 2 objetos Gol, roda 10 e Polo, roda 12
+
+        let pessoa = new Pessoa('William', 32);
+
+        document.write(pessoa.Nome);
+        document.write('</br>');
+        document.write(pessoa.Idade);   
+        document.write('</br>');
+
+        let carro1 = new Carro('Gol', 10);
+        let carro2 = new Carro('Polo', 12);
+        
+        document.write(carro1.Modelo);
+        document.write('</br>');
+        document.write(carro1.Roda);           
+        document.write('</br>');
+        
+        document.write(carro2.Modelo);
+        document.write('</br>');
+        document.write(carro2.Roda);       
+
+        
+    </script>
+</body>
+</html>

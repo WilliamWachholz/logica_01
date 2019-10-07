@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        //Escreva um script que solicite dois números 
+        //distintos para o usuário, e em seguida, escreva
+        //todos os número entre o intervalo dos números informados. 
+        let inicio = window.prompt("Informe o primeiro número");
+        let fim = window.prompt("Informe o segundo número");
+
+        if (inicio > fim)
+        {
+            document.write('Número inicial não pode ser maior que o final');
+        }
+        else
+        {
+            while (inicio <= fim) 
+            {                
+                document.write('<p>' + inicio + '</p>');
+                inicio++;
+            }
+        }
+    </script>
+</body>
+</html>

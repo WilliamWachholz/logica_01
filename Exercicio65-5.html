@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        let frase = window.prompt('Escreva uma palavra');
+
+        for (let index = 0; index < 3; index++) {
+            let palavra = window.prompt('Escreva uma palavra');
+
+            frase = frase.concat('-').concat(palavra);
+        }           
+
+        document.write(frase);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        let nomes = new Array();
+
+        nomes.push('João');
+        nomes.push('Maria');
+        nomes.push('José');
+        nomes.push('Maria');
+        
+        let posicao = nomes.lastIndexOf('Maria');
+
+        if (posicao > 0)
+            nomes[posicao] = 'Ana';
+
+        document.write(nomes.join(', '));           
+    </script>
+</body>
+</html>

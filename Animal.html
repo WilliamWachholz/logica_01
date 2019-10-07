@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>        
+        function Animal(tipo, nome, tamanho) {
+            this.Tipo = tipo;
+            this.Nome = nome;
+            this.Tamanho = tamanho;
+        }
+
+        function Falar(animal) {            
+            if (animal.Tipo == 'CACHORRO') 
+                document.write('AU AU');
+            else             
+                document.write('MIAU');
+        }
+        
+        let animal = new Animal(window.prompt('Qual o tipo de bicho? (Cachorro/Gato)').toUpperCase(), 
+            window.prompt('Qual o nome dele?'), 
+            parseFloat(window.prompt('Qual o tamanho dele?')));
+              
+        Falar(animal);        
+    </script>
+</body>
+</html>

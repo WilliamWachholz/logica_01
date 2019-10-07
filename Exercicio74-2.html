@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        let notas =  new Array();
+
+        for (let indice = 0; indice < 10; indice++)
+        {                            
+            notas[indice] = parseFloat(window.prompt('Escreva a nota'));
+        }         
+
+        let maiorNota = 0;
+        let menorNota = 10; 
+
+        for (let indice = 0; indice < notas.length; indice++)
+        {
+            if (notas[indice] > maiorNota)
+                maiorNota = notas[indice];
+
+            if (notas[indice] < menorNota)
+                menorNota = notas[indice];                
+        }
+
+        document.write(`<p> Maior Nota: ${maiorNota} </p>`);
+        document.write(`<p> Menor Nota: ${menorNota} </p>`);
+    </script>
+</body>
+</html>

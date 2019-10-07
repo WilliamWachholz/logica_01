@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>    
+<body>
+    <script>
+        let alunos = new Array();
+        let notas =  new Array();
+
+        for (let indice = 0; indice < 10; indice++)
+        {            
+            alunos.push(window.prompt('Escreva o nome do aluno'));            
+            notas[indice] = parseFloat(window.prompt('Escreva a nota'));
+        }
+
+        for (let indice = 0; indice < alunos.length; indice++)
+        {
+            document.write(`<p>Aluno: ${alunos[indice]} | Nota: ${notas[indice]} </p>`);
+        }               
+    </script>
+</body>
+</html>
